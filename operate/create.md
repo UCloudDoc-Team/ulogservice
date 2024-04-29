@@ -4,7 +4,7 @@
 
 ## 创建
 
-![image](/images/create_uls_instance_1.jpg)
+![image](/images/create_uls_instance_1.png)
 
 页面会列出可创建实例的全部地域和可用区，选择需求的可用区、存储容量、磁盘类型、网络设置、实例名称填写一些初始化信息等内容后创建就可实现日志服务实例的快速部署。
 
@@ -16,7 +16,7 @@
 
 ## 实例部署
 
-![image](/images/create_uls_list_1.jpg)
+![image](/images/create_uls_list_1.png)
 
 等待部署中，由于实例规模不同，所需要的部署时间会有所差异，部署大致时间在5分钟到10分钟。
 

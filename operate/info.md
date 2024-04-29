@@ -4,18 +4,18 @@
 
 ## 基本信息
 
-![image](/images/operate/detail_baseinfo_1.png)
+![image](/images/detail_baseinfo_1.png)
 
 其中接入地址为Filebeat 接入ULS地址。
 
 ## 配置信息
 
-![image](/images/operate/detail_configinfo_1.png)
+![image](/images/detail_configinfo_1.png)
 
 实例存储容量。
 
 ## 付费信息
 
-![image](/images/operate/detail_chargeinfo_1.png)
+![image](/images/detail_chargeinfo_1.png)
 
 实例付费详情。
