@@ -34,5 +34,11 @@ output.kafka:
 
 ### 3. 启动Filebeat
 
-**启动命令** ./filebeat run -c filebeat.yml
+**示例：** 启动命令 
+
+```
+./filebeat run -c filebeat.yml
+```
+
+
 

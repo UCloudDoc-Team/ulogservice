@@ -1,6 +1,6 @@
 # 产品简介
 
-日志服务 (UCloud Log Service,  ULS) 是一款支持日志（Log）、指标（Metric）数据的采集、检索分析、可视化的一体化可观测 SAAS 服务。
+日志服务 (UCloud Log Service,  ULS) 是一款支持日志（Log）数据的采集、检索分析、可视化的一体化可观测服务。
 
 ## 功能概览
 
