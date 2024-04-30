@@ -16,7 +16,7 @@
 
 1. 进入日志查询，选择查询主题。
 
-![image](/images/swtich_topic_1.png)
+![image](/images/switch_topic_1.png)
 
 ### **筛选条件**
 
