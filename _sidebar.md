@@ -7,4 +7,4 @@
      * [主题管理](/ulogservice/topic/manager)
      * [日志采集](/ulogservice/operate/collect)
      * [日志检索](/ulogservice/operate/search)
-
+* [接入指南](/ulogservice/operate/practice)
