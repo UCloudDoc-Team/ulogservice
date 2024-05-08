@@ -1,6 +1,6 @@
 * [概览](/ulogservice/README)
 * [产品简介](/ulogservice/introduction)
-   * ULS
+   * 操作指南
      * [创建实例](/ulogservice/operate/create)
      * [实例信息](/ulogservice/operate/info)
      * [释放实例](/ulogservice/operate/release)
