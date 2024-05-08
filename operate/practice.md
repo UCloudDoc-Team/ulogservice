@@ -14,3 +14,6 @@
 
 在客户主机上安装及配置Filebeat采集日志，具体参考[日志采集](/ulogservice/operate/collect.md)。
 
+## 日志检索
+
+日志采集之后，可以进入日志检索页面，检索日志，具体参考[日志检索](/ulogservice/operate/search.md)。
