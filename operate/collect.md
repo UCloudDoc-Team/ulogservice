@@ -1,14 +1,17 @@
 # 日志采集
 
-日志服务（ULS）使用 Filebeat 组件采集日志并导入到日志服务。
+日志服务（ULS）使用 UCloud 定制 Filebeat 组件采集日志并导入到日志服务。
 
 ## 安装启动
 
 ### 1. 下载Filebeat
 
-下载对应操作系统版本的 [Filebeat](https://www.elastic.co/cn/downloads/past-releases/filebeat-7-10-2)
+LUNIX X86_64 系列
+```
+wget https://ulogservice.cn-wlcb.ufileos.com/download/filebeat/filebeat-uls-7.12.21-linux-x86_64.tar.gz
+```
 
-以安装路径`/usr/local/`为例：Filebeat 解压路径为`/usr/local/`，解压完成后进入 Filebeat 目录`/usr/local/filebeat-${version}`。
+
 
 ### 2. 配置采集日志
 
@@ -21,24 +24,42 @@ filebeat.inputs:
   paths:
     - #{log_path}
 
-output.kafka:
-  hosts: ["kafka1:9092", "kafka2:9092", "kafka3:9092"]
-  topic: '#{topic_name}'
+output.uls:
+  enabled: true
+  endpoint: internal.cn-wlcb.uls.ucloud.cn
+  protocol: http
+  topic_id: #{topic_name}
+  public_key: #{public_key}
+  private_key: #{private_key}
+  format: json
 ```
 
 > 注：
 >
 > - #{log_path} 采集日志目录文件
-> - hosts 为接入地址
+> - endpoint 为接入地址
 > - #{topic_name} 日志主题
+> - #{public_key} 令牌公钥
+> - #{private_key} 令牌私钥
+
 
 ### 3. 启动Filebeat
 
 **示例：** 启动命令 
 
 ```
-./filebeat run -c filebeat.yml
+./filebeat -c filebeat.yml
 ```
 
 
 
+## 地域和域名
+
+日志服务提供内网域名访问方式：内网域名可响应来自于同一地域下的 UCloud 公有云服务的访问请求（如：UHost 云主机、UK8S 容器云等）。
+
+**公有云下日志服务地域访问域名（Endpoint）如下：**
+
+
+| 地域   | 内网域名                       |
+| ------ | ------------------------------ |
+| 华北二 | internal.cn-wlcb.uls.ucloud.cn |
