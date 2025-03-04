@@ -1,6 +1,7 @@
 
 * [概览](/ulogservice/README)
 * [产品简介](/ulogservice/introduction)
+* [计量计费](/ulogservice/bill/billing)
 * 操作指南
    * [主题管理](/ulogservice/topic/manager)
    * [令牌管理](/ulogservice/token/manager)
