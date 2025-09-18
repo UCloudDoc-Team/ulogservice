@@ -2,8 +2,7 @@
 
 ## 背景信息
 
-单行文本日志表示一行日志即为一条日志，换行符（\n）为一条日志结束的标识符。
-如果无需对日志内容进行结构化处理、无需提取日志字段进行精细化分析查询，建议使用单行全文模式。
+单行文本日志表示一行日志即为一条日志，换行符（\n）为一条日志结束的标识符。如果无需对日志内容进行结构化处理、无需提取日志字段进行精细化分析查询，建议使用单行全文模式。
 
 ## 日志样例
 
@@ -32,9 +31,9 @@
 
 | 配置方式       | 目录前缀表达式 | 文件名表达式 | 说明                                                         |
 | -------------- | -------------- | ------------ | ------------------------------------------------------------ |
-| 完整文件名称   | /var/log/nginx | access.log   | 此例中，日志路径配置为`/var/log/nginx/**/access.log`，LogListener 将会监听`/var/log/nginx`前缀路径下所有子目录中以`access.log`命名的日志文件 |
-| 文件名后缀匹配 | /var/log/nginx | *.log        | 此例中，日志路径配置为`/var/log/nginx/**/*.log`，LogListener 将会监听`/var/log/nginx`前缀路径下所有子目录中以`.log`结尾的日志文件 |
-| 文件名模糊匹配 | /var/log/nginx | error*       | 此例中，日志路径配置为`/var/log/nginx/**/error*`，LogListener 将会监听`/var/log/nginx`前缀路径下所有子目录中以`error`开头命名的日志文件 |
+| 完整文件名称   | /var/log/nginx | access.log   | 此例中，日志文件路径配置为`/var/log/nginx/**/access.log`，ULogAgent 将会监听`/var/log/nginx`前缀路径下所有子目录中以`access.log`命名的日志文件 |
+| 文件名后缀匹配 | /var/log/nginx | *.log        | 此例中，日志文件路径配置为`/var/log/nginx/**/*.log`，ULogAgent 将会监听`/var/log/nginx`前缀路径下所有子目录中以`.log`结尾的日志文件 |
+| 文件名模糊匹配 | /var/log/nginx | error*       | 此例中，日志文件路径配置为`/var/log/nginx/**/error*`，ULogAgent 将会监听`/var/log/nginx`前缀路径下所有子目录中以`error`开头命名的日志文件 |
 
 #### 配置采集策略
 - 全量：ULogAgent 采集文件时，从文件的开头开始读。

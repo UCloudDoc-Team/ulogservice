@@ -12,7 +12,7 @@ ULogAgent 以换行符（\n）为日志结束的标识符，并根据指定的�
 ### 步骤2：采集配置
 
 #### 配置日志文件采集路径
-![文本路径](/images/text/text_path_1.png)
+   ![文本路径](/images/text/text_path_1.png)
 **文件路径**即日志所在的目录和文件名，ULogAgent 会按照采集路径中的目录部分匹配符合规则的目录，监听这些目录下符合规则的日志文件。最多设置 10 个不同的采集路径。
 采集路径可以指定完整的目录和文件名，也可以通过通配符模糊匹配。
 
@@ -20,9 +20,9 @@ ULogAgent 以换行符（\n）为日志结束的标识符，并根据指定的�
 
 | 配置方式       | 目录前缀表达式 | 文件名表达式 | 说明                                                         |
 | -------------- | -------------- | ------------ | ------------------------------------------------------------ |
-| 完整文件名称   | /var/log/nginx | access.log   | 此例中，日志路径配置为`/var/log/nginx/**/access.log`，LogListener 将会监听`/var/log/nginx`前缀路径下所有子目录中以`access.log`命名的日志文件 |
-| 文件名后缀匹配 | /var/log/nginx | *.log        | 此例中，日志路径配置为`/var/log/nginx/**/*.log`，LogListener 将会监听`/var/log/nginx`前缀路径下所有子目录中以`.log`结尾的日志文件 |
-| 文件名模糊匹配 | /var/log/nginx | error*       | 此例中，日志路径配置为`/var/log/nginx/**/error*`，LogListener 将会监听`/var/log/nginx`前缀路径下所有子目录中以`error`开头命名的日志文件 |
+| 完整文件名称   | /var/log/nginx | access.log   | 此例中，日志文件路径配置为`/var/log/nginx/**/access.log`，ULogAgent 将会监听`/var/log/nginx`前缀路径下所有子目录中以`access.log`命名的日志文件 |
+| 文件名后缀匹配 | /var/log/nginx | *.log        | 此例中，日志文件路径配置为`/var/log/nginx/**/*.log`，ULogAgent 将会监听`/var/log/nginx`前缀路径下所有子目录中以`.log`结尾的日志文件 |
+| 文件名模糊匹配 | /var/log/nginx | error*       | 此例中，日志文件路径配置为`/var/log/nginx/**/error*`，ULogAgent 将会监听`/var/log/nginx`前缀路径下所有子目录中以`error`开头命名的日志文件 |
 
 #### 配置采集策略
 - 全量：ULogAgent 采集文件时，从文件的开头开始读。
@@ -37,8 +37,8 @@ ULogAgent 以换行符（\n）为日志结束的标识符，并根据指定的�
 1. 将“提取模式”设置为分隔符。
 2. 选择分隔符，并在“日志样例”文本框中，输入日志样例，单击提取。
    系统根据确定的分隔符将日志样例进行切分，并展示在抽取结果栏中，您需要为每个字段定义唯一的 key。目前，日志采集支持多种分隔符，常见的分隔符有：空格、制表符、竖线、分号、逗号。
-
-![文本路径](/images/text/text_delimiter_1.png)
+   ![文本路径](/images/text/text_delimiter_1.png)
+3. 确认采集配置，并单击完成创建。
 
 ### 步骤3：索引配置
-![文本路径](/images/text/text_index_1.png)
+   ![文本路径](/images/text/text_index_1.png)

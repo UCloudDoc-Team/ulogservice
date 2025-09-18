@@ -2,12 +2,12 @@
 * [概览](/ulogservice/README)
 * [产品简介](/ulogservice/introduction)
 * 操作指南
-   * [资源管理]
+   * 资源管理
      * [日志集](/ulogservice/resource/logset)
      * [日志主题](/ulogservice/resource/topic)
-   * [日志采集]
+   * 日志采集
      * [采集 UK8S 集群日志](/ulogservice/collect/UK8S)
-     * [采集文本日志]
+     * 采集文本日志
        * [使用单行全文提取模式采集日志](/ulogservice/collect/text/minimal_line)
        * [使用多行全文提取模式采集日志](/ulogservice/collect/text/multi_line)
        * [使用单行-完全正则提取模式采集日志](/ulogservice/collect/text/full_regex)

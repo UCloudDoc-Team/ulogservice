@@ -22,9 +22,9 @@
 
 | 配置方式       | 目录前缀表达式 | 文件名表达式 | 说明                                                         |
 | -------------- | -------------- | ------------ | ------------------------------------------------------------ |
-| 完整文件名称   | /var/log/nginx | access.log   | 此例中，日志路径配置为`/var/log/nginx/**/access.log`，LogListener 将会监听`/var/log/nginx`前缀路径下所有子目录中以`access.log`命名的日志文件 |
-| 文件名后缀匹配 | /var/log/nginx | *.log        | 此例中，日志路径配置为`/var/log/nginx/**/*.log`，LogListener 将会监听`/var/log/nginx`前缀路径下所有子目录中以`.log`结尾的日志文件 |
-| 文件名模糊匹配 | /var/log/nginx | error*       | 此例中，日志路径配置为`/var/log/nginx/**/error*`，LogListener 将会监听`/var/log/nginx`前缀路径下所有子目录中以`error`开头命名的日志文件 |
+| 完整文件名称   | /var/log/nginx | access.log   | 此例中，日志文件路径配置为`/var/log/nginx/**/access.log`，ULogAgent 将会监听`/var/log/nginx`前缀路径下所有子目录中以`access.log`命名的日志文件 |
+| 文件名后缀匹配 | /var/log/nginx | *.log        | 此例中，日志文件路径配置为`/var/log/nginx/**/*.log`，ULogAgent 将会监听`/var/log/nginx`前缀路径下所有子目录中以`.log`结尾的日志文件 |
+| 文件名模糊匹配 | /var/log/nginx | error*       | 此例中，日志文件路径配置为`/var/log/nginx/**/error*`，ULogAgent 将会监听`/var/log/nginx`前缀路径下所有子目录中以`error`开头命名的日志文件 |
 
 #### 配置采集策略
 - 全量：ULogAgent 采集文件时，从文件的开头开始读。
