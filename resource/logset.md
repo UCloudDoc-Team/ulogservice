@@ -4,7 +4,7 @@
 
 ## 创建日志集
 
-登录 [ULS 控制台](https://console.ucloud.cn/ulogservice/topic)，进入 ULS 主题管理。
+登录 [ULogservice 控制台](https://console.ucloud.cn/ulogservice/topic)，进入 ULogservice 主题管理。
 
 ![创建主题集](/images/logset/logset_create_0.png)
 

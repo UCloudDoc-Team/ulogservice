@@ -1,6 +1,6 @@
 # 采集 UK8S 集群日志
 
-本文将介绍如何在控制台配置 UK8S 集群的日志采集规则并投递到 日志服务 ULS。
+本文将介绍如何在控制台配置 UK8S 集群的日志采集规则并投递到 日志服务 ULogService。
 
 ## 前提条件
 
@@ -10,7 +10,7 @@
 
 ### 步骤1：选择日志主题、集群
 
-1. 登录 [ULS 控制台](https://console.ucloud.cn/ulogservice/topic)。
+1. 登录 [ULogService 控制台](https://console.ucloud.cn/ulogservice/topic)。
 
 2. 选择接入主题，点击日志接入。
 ![日志接入1](/images/uk8s/uk8s_access_1.png)
@@ -31,7 +31,7 @@
 
 - 元数据配置：
 ![日志采集2](/images/uk8s/uk8s_collect_2.png)
-  除了原始的日志内容， 日志服务还会带上容器或 Kubernetes 相关的元数据（例如：产生日志的容器 ID）一起上报到 ULS，方便用户查看日志时追溯来源或根据容器标识、特征（例如：容器名、labels）进行检索。
+  除了原始的日志内容， 日志服务还会带上容器或 Kubernetes 相关的元数据（例如：产生日志的容器 ID）一起上报到 ULogService，方便用户查看日志时追溯来源或根据容器标识、特征（例如：容器名、labels）进行检索。
   您可以自行选择是否需要上报这些元数据，按需勾选上传。
 
 - 解析规则配置：

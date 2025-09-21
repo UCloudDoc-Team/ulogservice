@@ -1,6 +1,6 @@
 # 日志采集
 
-日志服务（ULS）使用 UCloud 定制 Filebeat 组件采集日志并导入到日志服务。
+日志服务（ULogService）使用 UCloud 定制 Filebeat 组件采集日志并导入到日志服务。
 
 ## 安装启动
 
