@@ -1,10 +1,10 @@
 # 主题管理
 
-日志主题是日志数据在日志服务 ULS 平台进行采集、存储、检索的基本单元，采集到的海量日志以日志主题为单元进行管理。
+日志主题是日志数据在日志服务 ULogservice 平台进行采集、存储、检索的基本单元，采集到的海量日志以日志主题为单元进行管理。
 
 ## 创建主题
 
-1. 登录 [ULS 控制台](https://console.ucloud.cn/ulogservice/ulogservice)，进入 ULS 实例列表页。
+1. 登录 [ULogservice 控制台](https://console.ucloud.cn/ulogservice/ulogservice)，进入 ULogservice 实例列表页。
 2. 在实例列表页，单击实例名称进入实例详情页，然后进入主题管理页签，单击创建主题。
    ![创建主题1](/images/topic/create_topic_1.png)
 3. 填写主题名称（支持字母、数字、_）、分区数、保存时间
