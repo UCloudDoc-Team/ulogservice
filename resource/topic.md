@@ -30,7 +30,7 @@
 
 ## 查看采集配置
 
-点击”查看采集配置“按钮可查看该主题已接入的采集配置信息，具体见[日志检索](/ulogservice/resource/search.md)。
+点击”查看采集配置“按钮可查看该主题已接入的采集配置信息，具体见[日志检索](/ulogservice/operate/search)。
 
 ![collect_rule_button](/images/topic/collect_rule_button.png) 
 
