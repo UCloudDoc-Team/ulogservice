@@ -62,4 +62,4 @@ output.uls:
 
 | 地域   | 内网域名                       |
 | ------ | ------------------------------ |
-| 华北二 | internal.cn-wlcb.uls.ucloud.cn |
+| 华北（乌兰察布） | internal.cn-wlcb.uls.ucloud.cn |
