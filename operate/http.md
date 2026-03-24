@@ -31,7 +31,7 @@
 
 # 签名算法
 ```
-Signature = HMAC-SHA1(UCloudPrivateKey,UTF-8-Encoding-Of(StringToSign)) 
+Signature = HMAC-SHA1(UCloudPrivateKey,UTF-8-Encoding-Of(StringToSign))
 ```
 
 ## StringToSign
@@ -40,4 +40,17 @@ StringToSign = HTTP-Verb + "\n" +
     Content-MD5 + "\n" +
     Content-Type + "\n" +
     CanonicalizedHeaders
+```
+HTTP-Verb: 固定的POST方法
+Content-MD5: 对http body部分使用md5计算得到的
+Content-Type: application/json
+CanonicalizedHeaders:
+```
+1. 将每个以X-UCloud-开头的 HTTP 标头名称转换为小写。例如X-UCloud-Date”改为“x-ucloud-date。
+2. 根据标头名称按字典顺序排列标头集。
+3. 按照 RFC2616 中第 4.2 节中的规定，将相同名称的标头字段合并为一个header-name:comma-separated-value-list对，各值之间不留空格。
+4. 例如，可以将元数据标头x-ucloud-meta-username:fred和x-ucloud-meta-username:barney合并为单个标头x-ucloud-meta-username:fred,barney。
+5. 通过将折叠空格（包括换行符）替换为单个空格，“展开”跨多个行的长标头（按照 RFC2616 中第 4.2 节允许的方式）。
+6. 删除标头中冒号周围的空格。例如，标头x-ucloud-meta-username:fred,barney改为x-ucloud-meta-username:fred,barney。
+最后，请向生成的列表中的每个标准化标头附加换行字符（U+000A）。通过将此列表中所有的标头规范化为单个字符串，构建 CanonicalizedUcloudHeaders 元素。
 ```
