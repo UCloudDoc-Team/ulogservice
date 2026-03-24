@@ -11,6 +11,7 @@
   * [日志主题](/ulogservice/resource/topic)
   * 日志采集
     * [采集 UK8S 集群日志](/ulogservice/collect/UK8S)
+    * [HTTP协议上报日志](/ulogservice/operate/http.md)
     * 采集文本日志
       * [使用单行全文提取模式采集日志](/ulogservice/collect/text/minimal_line)
       * [使用多行全文提取模式采集日志](/ulogservice/collect/text/multi_line)

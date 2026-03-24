@@ -17,7 +17,3 @@
 ## 日志检索
 
 日志采集之后，可以进入日志检索页面，检索日志，具体参考[日志检索](/ulogservice/operate/search.md)。
-
-## HTTP协议上报
-
-日志服务除了可以直接接入UK8S之外，还支持使用HTTP协议进行日志上报，具体参考[日志接入-HTTP协议](/ulogservice/operate/http.md)。
