@@ -41,10 +41,10 @@ StringToSign = HTTP-Verb + "\n" +
     Content-Type + "\n" +
     CanonicalizedHeaders
 ```
-HTTP-Verb: 固定的POST方法
-Content-MD5: 对http body部分使用md5计算得到的
-Content-Type: application/json
-CanonicalizedHeaders:
+HTTP-Verb: 固定的POST方法<br />
+Content-MD5: 对http body部分使用md5计算得到的<br />
+Content-Type: application/json<br />
+CanonicalizedHeaders:<br/>
 ```
 1. 将每个以X-UCloud-开头的 HTTP 标头名称转换为小写。例如X-UCloud-Date”改为“x-ucloud-date。
 2. 根据标头名称按字典顺序排列标头集。
