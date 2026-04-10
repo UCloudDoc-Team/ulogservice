@@ -13,7 +13,7 @@
   * 日志采集
     * [采集 UK8S 集群日志](/ulogservice/collect/UK8S)
     * [HTTP协议上报日志](/ulogservice/operate/http.md)
-    * LogAgent安装和部署
+    * LogAgent采集
       * [LogAgent安装指南（Linux 版）](/ulogservice/operate/logagent_install)
     * 采集文本日志
       * [使用单行全文提取模式采集日志](/ulogservice/collect/text/minimal_line)
