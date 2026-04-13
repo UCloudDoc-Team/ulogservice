@@ -39,7 +39,8 @@ cd /usr/local/logagent/ && ./logagent.sh region public_key private_key project_i
 | private_key | Fm8****** | UCloud 账号管理里API密钥的私钥 |
 | project_id | org-****** | 日志主题所在的项目ID ｜
 
-### 2. 设置LogAgent标识
+### 2. 设置机器标识
+机器标识填写后该机器将与同样带有所填机器标识的机器组关联，如果机器组使用IP地址，那么无需设置标识，可以跳过当前步骤。详情可参考机器组管理[机器组管理](/resource/machinegroup)。
 目前添加机器标识需要手动修改yml文件，比如要增加http,nginx两个标识，那么需要在/usr/local/logagent/filebeat.yml文件的ulogservice下中增加如下内容：
 ```
 ulogservice:

@@ -10,6 +10,7 @@
 * 操作指南
   * [日志集](/ulogservice/resource/logset)
   * [日志主题](/ulogservice/resource/topic)
+  * [机器组](/ulogservice/resource/machinegroup)
   * 日志采集
     * [采集 UK8S 集群日志](/ulogservice/collect/UK8S)
     * [HTTP协议上报日志](/ulogservice/operate/http.md)
