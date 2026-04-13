@@ -2,7 +2,7 @@
 
 机器组是日志服务（ULS）中LogAgent所采集日志的服务器对象，通过机器组的方式来配置LogAgent的日志采集。可以根据不同的业务划分不同的机器组，方便管理日志服务。
 
-## 机器组
+## 创建机器组
 ### 通过机器标识创建机器组
 1. 登录 [ULogservice控制台](https://console.ucloud.cn/ulogservice/machinegroup)，进入机器组管理。
 
@@ -64,8 +64,8 @@ systemctl restart logagent
 2. 在右侧操作栏点击删除。
 
 ![删除机器组1](/images/machinegroup/delete_machinegroup_1.png)
-3. 在弹出的提示窗口，单机确认，完成机器组删除。
+3. 在弹出的提示窗口，单击确认，完成机器组删除。
 > 注意：
 > 机器组一旦删除，所有管理的日志主题就无法继续采集日志。
 
-![删除机器组1](/images/machinegroup/delete_machinegroup_2.png)
+![删除机器组2](/images/machinegroup/delete_machinegroup_2.png)
