@@ -16,7 +16,7 @@
 
 * 机器组名称：例如uls_test。
 * 机器组类型：选择机器标识。
-* 机器标识：输入标识，拥有该标识的LogAgent会自动加入到当前机器组中。
+* 机器标识：输入标识，拥有该标识的LogAgent会自动加入到当前机器组中。LogAgent设置标识请参考[LogAgent安装指南（Linux 版）](/operate/logagent_install.md)。
 
 4. 单击确定。
 5. 登录配置了机器标识的目标机器，并执行如下命令，打开LogAgent安装目录下的filebeat.yml。

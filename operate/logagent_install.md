@@ -1,5 +1,5 @@
 # LogAgent安装指南（Linux 版）
-LogAgent 是日志服务（ULS）提供的日志采集客户端，用于快速上报日志数据。在云主机（UHost）中安装LogAgent之后，通过控制台即可下发采集配置、接入日志服务。
+LogAgent 是日志服务（ULS）提供的日志采集客户端，用于快速上报日志数据。在云主机（UHost）中安装LogAgent之后，通过控制台即可下发采集配置、接入日志服务。如果是UK8S接入日志服务，不需要手动安装LogAgent，可直接在控制台上自动安装。
 
 ## 注意事项
 * 目前LogAgent只支持Linux x86_64云主机
