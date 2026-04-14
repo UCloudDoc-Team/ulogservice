@@ -31,6 +31,8 @@ vim /usr/local/logagent/filebeat.yml
 ```
 systemctl restart logagent
 ```
+
+
 ### 通过关联机器IP地址创建机器组
 1. 登录 [ULogservice控制台](https://console.ucloud.cn/ulogservice/machinegroup)，进入机器组管理。
 
