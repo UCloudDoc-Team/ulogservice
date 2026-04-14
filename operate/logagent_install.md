@@ -32,6 +32,7 @@ wget http://uls-logagent-cn-wlcb.internal-cn-wlcb.ufileos.com/logagent.tar.gz &&
 cd /usr/local/logagent/ && ./logagent.sh region public_key private_key project_id
 ```
 上述四个参数都是必填项，详细说明如下：
+
 | 参数 | 实例 | 说明 |
 | -- | -- | -- |
 | region | cn-bj2 | LogAgent所在的地域，日志服务地域对应缩写请参考[地域和访问域名](/ulogservice/region_domain_name) |
