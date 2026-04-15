@@ -42,7 +42,7 @@ cd /usr/local/logagent/ && ./logagent.sh region public_key private_key project_i
 
 ### 2. 设置机器标识
 根据机器组的关联方式，选择对应的操作：
-* 如果机器组使用IP地址：无需设置机器标识，可跳过当前步骤，参考：[机器组管理](/resource/machinegroup)完成配置
+* 如果机器组使用IP地址：无需设置机器标识，可跳过当前步骤，参考：[机器组管理](/ulogservice/resource/machinegroup)完成配置
 * 如果机器组使用机器标识：需要手动修改yml文件，在/usr/local/logagent/filebeat.yml文件的ulogservice下中增加标识列表。
 示例：增加http和nginx两个标识，配置如下：
 ```
