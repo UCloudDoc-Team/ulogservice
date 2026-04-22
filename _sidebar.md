@@ -25,4 +25,4 @@
       * [使用分隔符提取模式采集日志](/ulogservice/collect/text/delimiter)
   * [日志检索](/ulogservice/operate/search)
 * [接入指南](/ulogservice/operate/practice)
-* [产品定价](/ulogservice/price)
+* [产品定价](/ulogservice/bill/billing)
