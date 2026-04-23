@@ -33,6 +33,9 @@
 ```
 Signature = HMAC-SHA1(UCloudPrivateKey,UTF-8-Encoding-Of(StringToSign))
 ```
+> 注意：
+> HMAC-SHA1计算的结果需要转换成hex格式
+
 
 ## StringToSign
 ```
@@ -41,6 +44,11 @@ StringToSign = HTTP-Verb + "\n" +
     Content-Type + "\n" +
     CanonicalizedHeaders
 ```
+
+> 注意：
+> 如果CanonicalizedHeaders是空，Content-Type + "\n"后面"\n"也不能省略。
+
+
 HTTP-Verb: 固定的POST方法<br />
 Content-MD5: 对http body部分使用md5计算得到的<br />
 Content-Type: application/json<br />
