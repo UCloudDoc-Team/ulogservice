@@ -22,7 +22,7 @@
 ### 统计图表
 选择完主题后，在页面右侧选择统计图表：
 ![image](/images/analysis/table_1.png)
-点击统计图表之后，会现实一个输入框，用来输入SQL语句：
+点击统计图表之后，会显示一个输入框，用来输入SQL语句(语法参考：[SQL语法](/ulogservice/operate/analysis_syntax))：
 ![image](/images/analysis/analysis_1.png)
 点击查询按钮，查询的结果会以表格的形式展示出来：
 ![image](/images/analysis/analysis_2.png)
