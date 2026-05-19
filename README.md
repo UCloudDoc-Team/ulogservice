@@ -1,5 +1,4 @@
 
-
 * [概览](/ulogservice/README)
 * 产品简介
   * [什么是日志服务](/ulogservice/introduction)
@@ -28,11 +27,11 @@
       * [检索语法](/ulogservice/operate/syntax_search)
     * 分析日志
       * [分析概述](/ulogservice/operate/overview_analysis)
-      * [SQL语法](/ulogservice/operate/analysis_syntax)
+      * [SQL语法](/ulogservice/operate/syntax_analysis)
       * SQL函数
         * [聚合函数](/ulogservice/operate/analysis_func/aggregate)
         * [逻辑运算符](/ulogservice/operate/analysis_func/logical_operators)
-        * [比较运算符](/ulogservice/operate/analysis_func/comparision_operator)
+        * [比较运算符](/ulogservice/operate/analysis_func/comparison_operator)
         * [估算函数](/ulogservice/operate/analysis_func/estimation)
         * [字符串函数](/ulogservice/operate/analysis_func/string)
         * [日期和时间函数](/ulogservice/operate/analysis_func/date_and_time)
@@ -40,15 +39,14 @@
         * [JSON函数](/ulogservice/operate/analysis_func/json)
         * [类型转换函数](/ulogservice/operate/analysis_func/type_conversion)
         * [数学计算函数](/ulogservice/operate/analysis_func/math)
-    * 告警
-      * [告警概述](/ulogservice/operate/alarm/overview)
-      * 告警策略
-        * [创建告警策略](/ulogservice/operate/alarm/create_alarm_strategy)
-        * [修改告警策略](/ulogservice/operate/alarm/modify_alarm_strategy)
-        * [删除告警策略](/ulogservice/operate/alarm/delete_alarm_strategy)
-      * [查看告警历史](/ulogservice/operate/alarm/alarm_record_history)
-      * [触发条件表达式](/ulogservice/operate/alarm/trigger_condition)
-      * [附加通知内容变量](/ulogservice/operate/alarm/notification_variable)
+  * 告警
+    * [告警概述](/ulogservice/operate/alarm/overview)
+    * 告警策略
+      * [创建告警策略](/ulogservice/operate/alarm/create_alarm_strategy)
+      * [修改告警策略](/ulogservice/operate/alarm/modify_alarm_strategy)
+      * [删除告警策略](/ulogservice/operate/alarm/delete_alarm_strategy)
+    * [查看告警历史](/ulogservice/operate/alarm/alarm_record_history)
+    * [触发条件表达式](/ulogservice/operate/alarm/trigger_condition)
+    * [附加通知内容变量](/ulogservice/operate/alarm/notification_variable)
 * [接入指南](/ulogservice/operate/practice)
 * [产品定价](/ulogservice/bill/billing)
-

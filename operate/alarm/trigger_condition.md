@@ -42,7 +42,7 @@
 
 ## 内置字段
 
-### __QUERYCOUNT__
+### \_\_QUERYCOUNT\_\_
 
 `__QUERYCOUNT__` 表示执行语句查询返回的日志条数。
 
