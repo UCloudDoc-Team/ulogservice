@@ -107,7 +107,7 @@ __QUERYCOUNT__ >= 1
 
 执行语句：
 ```
-* | select count(*) as total, sum(case when status >= 500 then 1 else 0 end) as server_error
+* | select count(*) as total, sum(error) as server_error
 ```
 
 触发条件：
