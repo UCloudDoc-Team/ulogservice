@@ -19,7 +19,7 @@
 - 按字段值筛选符合条件的日志记录
 - 追踪特定时间范围内的问题日志
 
-更多检索操作详情，请参阅 [日志检索操作指南](/ulogservice/operate/overview_search)。
+更多检索操作详情，请参阅 [检索日志](/ulogservice/operate/overview_search)。
 
 ---
 
@@ -40,7 +40,7 @@
 - 监控系统运行状态和趋势
 - 发现异常模式和潜在问题
 
-更多分析操作详情，请参阅 [日志分析操作指南](/ulogservice/operate/analysis-guide)。
+更多分析操作详情，请参阅 [分析日志](/ulogservice/operate/overview_analysis)。
 
 ---
 
