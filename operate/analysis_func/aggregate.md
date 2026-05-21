@@ -105,7 +105,7 @@ checksum(x)
 SELECT checksum(message) as msg_checksum
 
 -- 按日期计算校验和
-SELECT date(__time__) as log_date, checksum(content) as content_checksum
+SELECT date(curtime) as log_date, checksum(content) as content_checksum
 GROUP BY log_date
 ```
 
@@ -168,7 +168,7 @@ SELECT max_by(path, response_time) as slowest_path
 
 -- 按日期获取响应时间最长的请求
 SELECT
-  date(__time__) as log_date,
+  date(curtime) as log_date,
   max_by(path, response_time) as slowest_path,
   max(response_time) as max_time
 GROUP BY log_date
@@ -209,7 +209,7 @@ SELECT min_by(path, response_time) as fastest_path
 
 -- 按日期获取响应时间最短的请求
 SELECT
-  date(__time__) as log_date,
+  date(curtime) as log_date,
   min_by(path, response_time) as fastest_path,
   min(response_time) as min_time
 GROUP BY log_date

@@ -98,10 +98,10 @@ date_format(x, format)
 **示例**：
 ```sql
 -- 格式化为年-月-日
-SELECT date_format(__time__, '%Y-%m-%d')
+SELECT date_format(curtime, '%Y-%m-%d')
 
 -- 格式化为完整时间
-SELECT date_format(__time__, '%Y-%m-%d %H:%i:%s')
+SELECT date_format(curtime, '%Y-%m-%d %H:%i:%s')
 ```
 
 #### date_parse
@@ -180,7 +180,7 @@ to_iso8601(x)
 **示例**：
 ```sql
 -- 转换为 ISO8601 格式
-SELECT to_iso8601(__time__)
+SELECT to_iso8601(curtime)
 ```
 
 #### to_unixtime
@@ -195,7 +195,7 @@ to_unixtime(x)
 **示例**：
 ```sql
 -- 转换为 Unix 时间戳
-SELECT to_unixtime(__time__)
+SELECT to_unixtime(curtime)
 ```
 
 #### current_unixtimestamp
@@ -230,14 +230,14 @@ day(x)     -- 日期（1-31）
 ```sql
 -- 提取各时间部分
 SELECT
-  year(__time__) as year,
-  month(__time__) as month,
-  day(__time__) as day
+  year(curtime) as year,
+  month(curtime) as month,
+  day(curtime) as day
 
 -- 按月统计
 SELECT
-  year(__time__) as year,
-  month(__time__) as month,
+  year(curtime) as year,
+  month(curtime) as month,
   count(*) as count
 GROUP BY year, month
 ORDER BY year, month
@@ -258,7 +258,7 @@ second(x)   -- 秒数（0-59）
 ```sql
 -- 按小时统计请求量
 SELECT
-  hour(__time__) as hour,
+  hour(curtime) as hour,
   count(*) as count
 GROUP BY hour
 ORDER BY hour
@@ -278,7 +278,7 @@ dow(x)
 ```sql
 -- 按星期统计请求量
 SELECT
-  day_of_week(__time__) as weekday,
+  day_of_week(curtime) as weekday,
   count(*) as count
 GROUP BY weekday
 ORDER BY weekday
@@ -296,7 +296,7 @@ doy(x)
 
 **示例**：
 ```sql
-SELECT day_of_year(__time__)
+SELECT day_of_year(curtime)
 ```
 
 #### week / week_of_year
@@ -313,7 +313,7 @@ week_of_year(x)
 ```sql
 -- 按周统计
 SELECT
-  week(__time__) as week_num,
+  week(curtime) as week_num,
   count(*) as count
 GROUP BY week_num
 ORDER BY week_num
@@ -332,7 +332,7 @@ quarter(x)
 ```sql
 -- 按季度统计
 SELECT
-  quarter(__time__) as q,
+  quarter(curtime) as q,
   count(*) as count
 GROUP BY q
 ORDER BY q
@@ -354,16 +354,16 @@ date_trunc(unit, x)
 **示例**：
 ```sql
 -- 按小时截断
-SELECT date_trunc('hour', __time__), count(*)
-GROUP BY date_trunc('hour', __time__)
+SELECT date_trunc('hour', curtime), count(*)
+GROUP BY date_trunc('hour', curtime)
 
 -- 按天截断
-SELECT date_trunc('day', __time__), count(*)
-GROUP BY date_trunc('day', __time__)
+SELECT date_trunc('day', curtime), count(*)
+GROUP BY date_trunc('day', curtime)
 
 -- 按月截断
-SELECT date_trunc('month', __time__), count(*)
-GROUP BY date_trunc('month', __time__)
+SELECT date_trunc('month', curtime), count(*)
+GROUP BY date_trunc('month', curtime)
 ```
 
 #### date_add
@@ -380,13 +380,13 @@ date_add(unit, N, x)
 **示例**：
 ```sql
 -- 增加 1 天
-SELECT date_add('day', 1, __time__)
+SELECT date_add('day', 1, curtime)
 
 -- 增加 2 小时
-SELECT date_add('hour', 2, __time__)
+SELECT date_add('hour', 2, curtime)
 
 -- 减少 1 周（N 为负数）
-SELECT date_add('week', -1, __time__)
+SELECT date_add('week', -1, curtime)
 ```
 
 #### date_diff
@@ -403,7 +403,7 @@ date_diff(unit, x, y)
 **示例**：
 ```sql
 -- 计算相差的天数
-SELECT date_diff('day', __time__, now())
+SELECT date_diff('day', curtime, now())
 
 -- 计算相差的小时数
 SELECT date_diff('hour', start_time, end_time)
@@ -416,7 +416,7 @@ SELECT date_diff('hour', start_time, end_time)
 ```sql
 -- 分析每小时的请求分布
 SELECT
-  hour(__time__) as hour,
+  hour(curtime) as hour,
   count(*) as requests,
   avg(response_time) as avg_time
 GROUP BY hour
@@ -428,9 +428,9 @@ ORDER BY hour
 ```sql
 -- 格式化时间显示
 SELECT
-  date_format(__time__, '%Y-%m-%d %H:%i:%s') as formatted_time,
+  date_format(curtime, '%Y-%m-%d %H:%i:%s') as formatted_time,
   count(*) as count
-GROUP BY date_format(__time__, '%Y-%m-%d %H:%i:%s')
+GROUP BY date_format(curtime, '%Y-%m-%d %H:%i:%s')
 ORDER BY formatted_time
 ```
 
@@ -439,7 +439,7 @@ ORDER BY formatted_time
 ```sql
 -- 计算时间差
 SELECT
-  date_diff('hour', __time__, now()) as hours_ago,
+  date_diff('hour', curtime, now()) as hours_ago,
   count(*) as count
 GROUP BY hours_ago
 ORDER BY hours_ago
