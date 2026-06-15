@@ -7,6 +7,7 @@
 | -- | -- |
 | 华北（北京2） | cn-bj2 |
 | 华北（乌兰察布）| cn-wlcb |
+| 香港 | hk |
 | 俄罗斯（莫斯科） | rus-mosc |
 | 巴基斯坦（卡拉奇）| pk-khi |
 | 哈萨克斯坦（阿拉木图）| kz-ala |
@@ -16,6 +17,7 @@
 | -- | -- |
 | 华北（北京2） | internal.cn-bj2.uls.ucloud.cn |
 | 华北（乌兰察布）| internal.cn-wlcb.uls.ucloud.cn |
+| 香港| internal.hk.uls.ucloud.cn |
 | 俄罗斯（莫斯科） | internal.rus-mosc.uls.ucloud.cn |
 | 巴基斯坦（卡拉奇）| internal.pk-khi.uls.ucloud.cn |
 | 哈萨克斯坦（阿拉木图）| internal.kz-ala.uls.ucloud.cn |
