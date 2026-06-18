@@ -11,6 +11,7 @@
 | 俄罗斯（莫斯科） | rus-mosc |
 | 巴基斯坦（卡拉奇）| pk-khi |
 | 哈萨克斯坦（阿拉木图）| kz-ala |
+| 乌兹别克斯坦（塔什干）| uz-tas |
 
 ## 访问域名
 | 地域 | 内网域名 |
@@ -21,3 +22,4 @@
 | 俄罗斯（莫斯科） | internal.rus-mosc.uls.ucloud.cn |
 | 巴基斯坦（卡拉奇）| internal.pk-khi.uls.ucloud.cn |
 | 哈萨克斯坦（阿拉木图）| internal.kz-ala.uls.ucloud.cn |
+| 乌兹别克斯坦（塔什干）| internal.uz-tas.uls.ucloud.cn |
