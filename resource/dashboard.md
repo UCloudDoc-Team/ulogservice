@@ -20,29 +20,36 @@ Dashboard 是日志服务提供的可视化日志监控功能。通过 Dashboard
 ## 操作指南
 ### 大盘管理
 1. 创建大盘：在 Dashboard 列表页，点击 `创建大盘`。填写大盘名称（最长 128 字符），点击确定完成创建。
+
 ![创建大盘1](/images/dashboard/create_dashboard1.png)
 ![创建大盘2](/images/dashboard/create_dashboard2.png)
 2. 修改大盘：在 Dashboard 列表页和详情页，点击编辑按钮，修改大盘名称，点击确定保存修改。修改大盘名称不影响已创建的图表组和图表。
+
 ![修改大盘1](/images/dashboard/update_dashboard1.png)
 ![修改大盘2](/images/dashboard/update_dashboard2.png)
 ![修改大盘3](/images/dashboard/update_dashboard3.png)
 3. 删除大盘：在 Dashboard 列表页，点击 `删除`，确认删除大盘。删除大盘前需要删除其中所有图表组。
+
 ![删除大盘1](/images/dashboard/delete_dashboard1.png)
 ![删除大盘2](/images/dashboard/delete_dashboard2.png)
 
 ### 图表组管理
 1. 创建图表组：在大盘详情页，点击 `添加图表组`。填写图表组名称（最长 128 字符），点击确定完成创建。
+
 ![创建图表组1](/images/dashboard/create_chartgroup1.png)
 ![创建图表组2](/images/dashboard/create_chartgroup2.png)
 2. 修改图表组：点击图表组的编辑按钮，修改图表组名称，点击确定保存。修改图表组名称不影响组内图表。
+
 ![修改图表组1](/images/dashboard/update_chartgroup1.png)
 ![修改图表组2](/images/dashboard/update_chartgroup2.png)
 3. 删除图表组：点击图表组的删除按钮，确认删除。删除图表组前需要删除其中所有图表。
+
 ![删除图表组](/images/dashboard/delete_chartgroup.png)
 
 ### 图表管理
 #### 创建图表
 1. 在大盘详情页，点击 `添加图表`
+
 ![添加图表](/images/dashboard/create_chart1.png)
 2. **填写查询内容**：选择日志集和主题，输入检索分析语句，点击`查询`，右侧实时显示图表。
 3. **选择图表类型**：
@@ -59,10 +66,12 @@ Dashboard 是日志服务提供的可视化日志监控功能。通过 Dashboard
    - 图表名称（最长 128 字符）
    - 所属分组
 7. 点击 `保存` 完成创建
+
 ![添加图表](/images/dashboard/create_chart2.png)
 
 #### 修改图表
 1. 点击图表右上角的 **编辑** 按钮
+
 ![修改图表](/images/dashboard/update_chart.png)
 2. 修改图表配置（支持修改所有配置项，操作与创建图表相同）
 3. 点击 `保存` 完成修改
@@ -70,12 +79,14 @@ Dashboard 是日志服务提供的可视化日志监控功能。通过 Dashboard
 #### 删除图表
 1. 点击图表右上角的 **删除** 按钮
 2. 确认删除操作
+
 ![删除图表1](/images/dashboard/delete_chart1.png)
 ![删除图表2](/images/dashboard/delete_chart2.png)
 
 #### 调整图表顺序
 1. 拖拽图表到目标位置（支持图表组内/跨组移动，支持图表组排序）
 2. 点击 `保存` 完成修改
+
 ![调整图表顺序](/images/dashboard/update_chart_order.png)
 
 ## 检索分析语句说明
