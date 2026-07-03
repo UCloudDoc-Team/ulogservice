@@ -48,5 +48,6 @@
     * [查看告警历史](/ulogservice/operate/alarm/alarm_record_history)
     * [触发条件表达式](/ulogservice/operate/alarm/trigger_condition)
     * [附加通知内容变量](/ulogservice/operate/alarm/notification_variable)
+  * [Dashboard](/ulogservice/resource/dashboard)
 * [接入指南](/ulogservice/operate/practice)
 * [产品定价](/ulogservice/bill/billing)
