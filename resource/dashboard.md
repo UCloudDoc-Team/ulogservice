@@ -23,11 +23,13 @@ Dashboard 是日志服务提供的可视化日志监控功能。通过 Dashboard
 
 ![创建大盘1](/images/dashboard/create_dashboard1.png)
 ![创建大盘2](/images/dashboard/create_dashboard2.png)
+
 2. 修改大盘：在 Dashboard 列表页和详情页，点击编辑按钮，修改大盘名称，点击确定保存修改。修改大盘名称不影响已创建的图表组和图表。
 
 ![修改大盘1](/images/dashboard/update_dashboard1.png)
 ![修改大盘2](/images/dashboard/update_dashboard2.png)
 ![修改大盘3](/images/dashboard/update_dashboard3.png)
+
 3. 删除大盘：在 Dashboard 列表页，点击 `删除`，确认删除大盘。删除大盘前需要删除其中所有图表组。
 
 ![删除大盘1](/images/dashboard/delete_dashboard1.png)
@@ -38,10 +40,12 @@ Dashboard 是日志服务提供的可视化日志监控功能。通过 Dashboard
 
 ![创建图表组1](/images/dashboard/create_chartgroup1.png)
 ![创建图表组2](/images/dashboard/create_chartgroup2.png)
+
 2. 修改图表组：点击图表组的编辑按钮，修改图表组名称，点击确定保存。修改图表组名称不影响组内图表。
 
 ![修改图表组1](/images/dashboard/update_chartgroup1.png)
 ![修改图表组2](/images/dashboard/update_chartgroup2.png)
+
 3. 删除图表组：点击图表组的删除按钮，确认删除。删除图表组前需要删除其中所有图表。
 
 ![删除图表组](/images/dashboard/delete_chartgroup.png)
@@ -51,6 +55,7 @@ Dashboard 是日志服务提供的可视化日志监控功能。通过 Dashboard
 1. 在大盘详情页，点击 `添加图表`
 
 ![添加图表](/images/dashboard/create_chart1.png)
+
 2. **填写查询内容**：选择日志集和主题，输入检索分析语句，点击`查询`，右侧实时显示图表。
 3. **选择图表类型**：
    - 时序图：适合展示指标随时间变化的趋势
@@ -73,6 +78,7 @@ Dashboard 是日志服务提供的可视化日志监控功能。通过 Dashboard
 1. 点击图表右上角的 **编辑** 按钮
 
 ![修改图表](/images/dashboard/update_chart.png)
+
 2. 修改图表配置（支持修改所有配置项，操作与创建图表相同）
 3. 点击 `保存` 完成修改
 
