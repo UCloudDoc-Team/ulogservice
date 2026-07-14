@@ -19,6 +19,9 @@ LogAgent文件保存在US3上，可以选择对应地域的地址进行下载。
 | 巴基斯坦（卡拉奇） | http://uls-logagent-pk-khi.internal-pk-khi.ufileos.com/logagent.tar.gz | http://uls-logagent-pk-khi.pk-khi.ufileos.com/logagent.tar.gz |
 | 哈萨克斯坦（阿拉木图）| http://uls-logagent-kz-ala.internal-kz-ala.ufileos.com/logagent.tar.gz | http://uls-logagent-kz-ala.kz-ala.ufileos.com/logagent.tar.gz |
 | 乌兹别克斯坦（塔什干）| http://uls-logagent-uz-tas.internal-uz-tas.ufileos.com/logagent.tar.gz | http://uls-logagent-uz-tas.uz-tas.ufileos.com/logagent.tar.gz |
+| 美国（洛杉矶） | http://uls-logagent-us-ca.internal-us-ca-01.ufileos.com/logagent.tar.gz | http://uls-logagent-us-ca.us-ca.ufileos.com/logagent.tar.gz |
+| 新加坡 | http://uls-logagent-sg.internal-sg-01.ufileos.com/logagent.tar.gz | http://uls-logagent-sg.sg.ufileos.com/logagent.tar.gz |
+| 德国（法兰克福） | http://uls-logagent-ge-fra.internal-ge-fra.ufileos.com/logagent.tar.gz | http://uls-logagent-ge-fra.ge-fra.ufileos.com/logagent.tar.gz |
 
 使用如下命令安装：
 ```
