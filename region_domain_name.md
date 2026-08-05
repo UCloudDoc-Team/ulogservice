@@ -5,7 +5,8 @@
 ## 地域
 | 地域 | 地域简称 |
 | -- | -- |
-| 华北（北京2） | cn-bj2 |
+| 华北（北京2）| cn-bj2 |
+| 华东（上海2）| cn-sh2 |
 | 华北（乌兰察布）| cn-wlcb |
 | 香港 | hk |
 | 俄罗斯（莫斯科） | rus-mosc |
@@ -19,7 +20,8 @@
 ## 访问域名
 | 地域 | 内网域名 |
 | -- | -- |
-| 华北（北京2） | internal.cn-bj2.uls.ucloud.cn |
+| 华北（北京2）| internal.cn-bj2.uls.ucloud.cn |
+| 华东（上海2）| internal.cn-sh2.uls.ucloud.cn |
 | 华北（乌兰察布）| internal.cn-wlcb.uls.ucloud.cn |
 | 香港| internal.hk.uls.ucloud.cn |
 | 俄罗斯（莫斯科） | internal.rus-mosc.uls.ucloud.cn |
