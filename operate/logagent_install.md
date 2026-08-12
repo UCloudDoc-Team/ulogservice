@@ -13,6 +13,7 @@ LogAgent文件保存在US3上，可以选择对应地域的地址进行下载。
 | 地域 | 内网地址 | 外网地址 |
 | -- | -- | -- |
 | 华北（北京2）| http://uls-logagent-cn-bj.ufile.cn-north-02.ucloud.cn/logagent.tar.gz | http://uls-logagent-cn-bj.cn-bj.ufileos.com/logagent.tar.gz |
+| 华东（上海2）| http://uls-logagent-cn-sh2.internal-cn-sh2-01.ufileos.com/logagent.tar.gz | http://uls-logagent-cn-sh2.cn-sh2.ufileos.com/logagent.tar.gz |
 | 华北（乌兰察布）| http://uls-logagent-cn-wlcb.internal-cn-wlcb.ufileos.com/logagent.tar.gz | http://uls-logagent-cn-wlcb.cn-wlcb.ufileos.com/logagent.tar.gz |
 | 香港 | http://uls-logagent-hk.internal-hk-01.ufileos.com/logagent.tar.gz | http://uls-logagent-hk.hk.ufileos.com/logagent.tar.gz |
 | 俄罗斯（莫斯科） | http://uls-logagent-rus-mosc.internal-rus-mosc.ufileos.com/logagent.tar.gz | http://uls-logagent-rus-mosc.rus-mosc.ufileos.com/logagent.tar.gz |
