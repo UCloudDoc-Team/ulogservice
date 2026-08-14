@@ -75,7 +75,7 @@ Dashboard 是日志服务提供的可视化日志监控功能。通过 Dashboard
 ![添加图表](/images/dashboard/create_chart2.png)
 
 #### 修改图表
-1. 点击图表右上角的 **编辑** 按钮
+1. 点击图表右上角的 `编辑` 按钮
 
 ![修改图表](/images/dashboard/update_chart.png)
 
@@ -83,7 +83,7 @@ Dashboard 是日志服务提供的可视化日志监控功能。通过 Dashboard
 3. 点击 `保存` 完成修改
 
 #### 删除图表
-1. 点击图表右上角的 **删除** 按钮
+1. 点击图表右上角的 `删除` 按钮
 2. 确认删除操作
 
 ![删除图表1](/images/dashboard/delete_chart1.png)
@@ -106,7 +106,7 @@ Dashboard 是日志服务提供的可视化日志监控功能。通过 Dashboard
 
 **示例**：
 ```sql
-level:error | select count(*) as error_count
+level:error | SELECT count(*) as error_count
 ```
 查询包含 "error" 关键词的日志数量。
 
