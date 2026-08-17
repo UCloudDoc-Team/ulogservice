@@ -48,6 +48,11 @@
 | date_add函数 | `date_add(unit, N, x)` | 在时间上增加指定的时间间隔。 |
 | date_diff函数 | `date_diff(unit, x, y)` | 计算两个时间之间的差值。 |
 
+### 时间分组函数
+| 函数名称 | 语法 | 说明 |
+|----------|------|------|
+| histogram函数 | `histogram(x, interval)` | 按固定时间间隔对日志数据进行分组聚合统计 |
+
 ## 函数说明
 
 ### 日期和时间函数
@@ -407,6 +412,38 @@ SELECT date_diff('day', curtime, now())
 
 -- 计算相差的小时数
 SELECT date_diff('hour', start_time, end_time)
+```
+
+#### histogram
+
+按固定时间间隔对日志数据进行分组聚合统计。
+
+**语法**：
+```sql
+histogram(x, interval)
+```
+
+**参数说明**：
+- x：此字段只支持时间类型，例如系统保留字段`__TIMESTAMP__`。自定义格式的时间字符串可以使用 date_parse 函数转换为时间类型。
+- interval：
+  - 固定时间间隔，支持单位为 SECOND（秒）、MINUTE（分）、HOUR（小时）、DAY（天）。例如时间间隔5分钟，即 INTERVAL 5 MINUTE。
+  - 动态时间间隔，格式为：`${__interval}`。`${__interval}`取值会依据查询的时间范围自动变化。具体规则如下表：
+
+| 时间范围        | 时间间隔  |
+| --------------- | --------- |
+| ≤ 1小时         | 1 MINUTE  |
+| ≤ 6小时         | 5 MINUTE  |
+| ≤ 1天           | 15 MINUTE |
+| ≤ 7天           | 1 HOUR    |
+| > 7天           | 1 DAY     |
+
+**示例**：
+```sql
+-- 统计每 10 分钟上报日志条数
+SELECT histogram(__TIMESTAMP__, 'INTERVAL 10 MINUTE') as time_bucket, count(*) GROUP BY time_bucket ORDER BY time_bucket
+
+-- 统计动态时间间隔的上报日志条数
+SELECT histogram(__TIMESTAMP__, 'INTERVAL ${__interval}') as time_bucket, count(*) GROUP BY time_bucket ORDER BY time_bucket
 ```
 
 ## 使用示例
