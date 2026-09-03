@@ -10,6 +10,7 @@
 | 华北（乌兰察布）| cn-wlcb |
 | 香港 | hk |
 | 俄罗斯（莫斯科） | rus-mosc |
+| 尼日利亚（拉各斯） | afr-nigeria |
 | 巴基斯坦（卡拉奇）| pk-khi |
 | 哈萨克斯坦（阿拉木图）| kz-ala |
 | 乌兹别克斯坦（塔什干）| uz-tas |
@@ -25,6 +26,7 @@
 | 华北（乌兰察布）| internal.cn-wlcb.uls.ucloud.cn |
 | 香港| internal.hk.uls.ucloud.cn |
 | 俄罗斯（莫斯科） | internal.rus-mosc.uls.ucloud.cn |
+| 尼日利亚（拉各斯） | internal.afr-nigeria.uls.ucloud.cn |
 | 巴基斯坦（卡拉奇）| internal.pk-khi.uls.ucloud.cn |
 | 哈萨克斯坦（阿拉木图）| internal.kz-ala.uls.ucloud.cn |
 | 乌兹别克斯坦（塔什干）| internal.uz-tas.uls.ucloud.cn |
