@@ -16,6 +16,7 @@
     * [HTTP协议上报日志](/ulogservice/operate/http.md)
     * LogAgent采集
       * [LogAgent安装指南（Linux 版）](/ulogservice/operate/logagent_install)
+    * [采集 SysLog 日志](/ulogservice/collect/syslog)
     * 采集文本日志
       * [使用单行全文提取模式采集日志](/ulogservice/collect/text/minimal_line)
       * [使用多行全文提取模式采集日志](/ulogservice/collect/text/multi_line)
