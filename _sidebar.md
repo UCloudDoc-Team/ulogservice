@@ -43,6 +43,7 @@
         * [JSON函数](/ulogservice/operate/analysis_func/json)
         * [类型转换函数](/ulogservice/operate/analysis_func/type_conversion)
         * [数学计算函数](/ulogservice/operate/analysis_func/math)
+    * [兼容 Elasticsearch 接口](/ulogservice/operate/elasticsearch_interface)
   * 告警
     * [告警概述](/ulogservice/operate/alarm/overview)
     * 告警策略
