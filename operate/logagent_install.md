@@ -3,7 +3,8 @@ LogAgent 是日志服务（ULS）提供的日志采集客户端，用于快速�
 
 ## 注意事项
 * 目前LogAgent只支持Linux x86_64云主机
-* 云主机上需要安装 systemd 和 wget 程序
+* 云主机上需要安装 wget 程序
+* 云主机使用 systemd 或 SysV init 管理服务均可，安装脚本会根据系统自动适配，启动方式请参考[启动LogAgent](#3-启动logagent)
 * 需要具备root权限来完成LogAgent的安装
 * 确定地域信息，比如华北（北京2）地域为：cn-bj2。支持的地域请参考：[地域和访问域名](/ulogservice/region_domain_name)
 
@@ -63,6 +64,16 @@ ulogservice:
 
 
 ### 3. 启动LogAgent
+LogAgent 支持 systemd 和 SysV init 两种服务管理方式，请先执行以下命令判断云主机是否支持 systemd：
+
+```
+if [ -d /run/systemd/system ]; then echo "systemd"; else echo "sysvinit"; fi
+```
+
+* 输出 `systemd`：系统支持 systemd，请参考[使用 systemd 启动](#使用-systemd-启动)
+* 输出 `sysvinit`：系统不支持 systemd，请参考[使用 SysV init 启动](#使用-sysv-init-启动)
+
+#### 使用 systemd 启动
 执行以下命令启动LogAgent：
 ```
 systemctl start logagent
@@ -74,4 +85,19 @@ systemctl status logagent
 加上开机自启动：
 ```
 systemctl enable logagent
+```
+
+#### 使用 SysV init 启动
+执行以下命令启动LogAgent：
+```
+service logagent start
+```
+使用如下命令观察LogAgent状态：
+```
+service logagent status
+```
+加上开机自启动（根据系统选择对应命令）：
+```
+chkconfig logagent on          # CentOS、RHEL 等
+update-rc.d logagent defaults  # Debian、Ubuntu 等
 ```
