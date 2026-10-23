@@ -26,7 +26,7 @@ filebeat.inputs:
 
 output.uls:
   enabled: true
-  endpoint: internal.cn-wlcb.uls.ucloud.cn
+  endpoint: internal.cn-wlcb.cloud-logservice.com
   protocol: http
   topic_id: #{topic_name}
   public_key: #{public_key}
@@ -62,4 +62,4 @@ output.uls:
 
 | 地域   | 内网域名                       |
 | ------ | ------------------------------ |
-| 华北（乌兰察布） | internal.cn-wlcb.uls.ucloud.cn |
+| 华北（乌兰察布） | internal.cn-wlcb.cloud-logservice.com |

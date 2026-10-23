@@ -21,7 +21,7 @@
 日志服务的兼容接口通过各 [地域](/ulogservice/region_domain_name) 的内网域名提供，请求路径统一以 `/elasticsearch/` 开头：
 
 ```
-https://internal.<region>.uls.ucloud.cn/elasticsearch/
+https://internal.<region>.cloud-logservice.com/elasticsearch/
 ```
 
 其中 `<region>` 为地域简称，例如 `cn-bj2`、`cn-sh2`、`cn-wlcb` 等，地域简称列表请参阅 [地域和访问域名](/ulogservice/region_domain_name)。
@@ -128,7 +128,7 @@ Elasticsearch 中使用 `@timestamp` 表示日志时间，日志服务中对应�
 
 ```bash
 curl -u "<public_key>:<private_key>" \
-  -X POST "https://internal.<region>.uls.ucloud.cn/elasticsearch/<topic_id>/_search" \
+  -X POST "https://internal.<region>.cloud-logservice.com/elasticsearch/<topic_id>/_search" \
   -H 'Content-Type: application/json' \
   -d '{
     "track_total_hits": true,
@@ -157,7 +157,7 @@ curl -u "<public_key>:<private_key>" \
 
 ```bash
 curl -u "<public_key>:<private_key>" \
-  -X POST "https://internal.<region>.uls.ucloud.cn/elasticsearch/<topic_id>/_search" \
+  -X POST "https://internal.<region>.cloud-logservice.com/elasticsearch/<topic_id>/_search" \
   -H 'Content-Type: application/json' \
   -d '{
     "size": 0,
@@ -202,7 +202,7 @@ curl -u "<public_key>:<private_key>" \
 
 ```bash
 curl -u "<public_key>:<private_key>" \
-  -X POST "https://internal.<region>.uls.ucloud.cn/elasticsearch/<topic_id>/_search" \
+  -X POST "https://internal.<region>.cloud-logservice.com/elasticsearch/<topic_id>/_search" \
   -H 'Content-Type: application/json' \
   -d '{
     "size": 0,
