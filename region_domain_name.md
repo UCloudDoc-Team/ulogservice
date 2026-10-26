@@ -21,15 +21,15 @@
 ## 访问域名
 | 地域 | 内网域名 |
 | -- | -- |
-| 华北（北京2）| internal.cn-bj2.uls.ucloud.cn |
-| 华东（上海2）| internal.cn-sh2.uls.ucloud.cn |
-| 华北（乌兰察布）| internal.cn-wlcb.uls.ucloud.cn |
-| 香港| internal.hk.uls.ucloud.cn |
-| 俄罗斯（莫斯科） | internal.rus-mosc.uls.ucloud.cn |
-| 尼日利亚（拉各斯） | internal.afr-nigeria.uls.ucloud.cn |
-| 巴基斯坦（卡拉奇）| internal.pk-khi.uls.ucloud.cn |
-| 哈萨克斯坦（阿拉木图）| internal.kz-ala.uls.ucloud.cn |
-| 乌兹别克斯坦（塔什干）| internal.uz-tas.uls.ucloud.cn |
-| 美国（洛杉矶） | internal.us-ca.uls.ucloud.cn |
-| 新加坡 | internal.sg.uls.ucloud.cn |
-| 德国（法兰克福） | internal.ge-fra.uls.ucloud.cn |
+| 华北（北京2）| internal.cn-bj2.cloud-logservice.com |
+| 华东（上海2）| internal.cn-sh2.cloud-logservice.com |
+| 华北（乌兰察布）| internal.cn-wlcb.cloud-logservice.com |
+| 香港| internal.hk.cloud-logservice.com |
+| 俄罗斯（莫斯科） | internal.rus-mosc.cloud-logservice.com |
+| 尼日利亚（拉各斯） | internal.afr-nigeria.cloud-logservice.com |
+| 巴基斯坦（卡拉奇）| internal.pk-khi.cloud-logservice.com |
+| 哈萨克斯坦（阿拉木图）| internal.kz-ala.cloud-logservice.com |
+| 乌兹别克斯坦（塔什干）| internal.uz-tas.cloud-logservice.com |
+| 美国（洛杉矶） | internal.us-ca.cloud-logservice.com |
+| 新加坡 | internal.sg.cloud-logservice.com |
+| 德国（法兰克福） | internal.ge-fra.cloud-logservice.com |
