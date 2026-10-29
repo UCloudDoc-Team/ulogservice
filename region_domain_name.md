@@ -17,6 +17,7 @@
 | 美国（洛杉矶）| us-ca |
 | 新加坡 | sg |
 | 德国（法兰克福） | ge-fra |
+| 越南（胡志明） | vn-sng |
 
 ## 访问域名
 | 地域 | 内网域名 |
@@ -33,3 +34,4 @@
 | 美国（洛杉矶） | internal.us-ca.cloud-logservice.com |
 | 新加坡 | internal.sg.cloud-logservice.com |
 | 德国（法兰克福） | internal.ge-fra.cloud-logservice.com |
+| 越南（胡志明）| internal.vn-sng.cloud-logservice.com |
